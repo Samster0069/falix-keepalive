@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Falix Keep Alive</title></head>
+<body><h1>Keep-alive Page for Falix</h1>
+  <script>
+    (function ping() {
+      const url = "http://ahhhhhhhhhhhhhhhh.falixsrv.me";
+      fetch(url, { method: "GET", mode: "no-cors", keepalive: true })
+        .catch(() => {});
+      setTimeout(ping, 300000);
+    })();
+  </script>
+</body>
+</html>
